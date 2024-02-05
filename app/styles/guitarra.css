@@ -1,0 +1,43 @@
+.guitarra{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.guitarra .contenido{
+    padding: 1rem;
+    text-align: center;
+}
+.guitarra .contenido h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight:  900;
+    text-align: center;
+    color: var(--primary);
+}
+.guitarra .precio {
+    color: var(--primary);
+    font-size: 5rem;
+    text-align: center;
+    margin: 0;
+    font-weight: 900;
+}
+.btn {
+    background-color: var(--primary);
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 800;
+    transition-property: background-color;
+    transition-duration: 400ms;
+    text-transform: uppercase;
+}
+.btn:hover {
+    color: black;
+    background-color: rgb(225, 225, 225);
+}
+.imagen{
+    padding-right: 70px;
+}

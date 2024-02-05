@@ -1,0 +1,90 @@
+.guitarras-grid {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 768px){
+    .guitarras-grid{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
+@media (min-width: 992px){
+    .guitarras-grid{
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
+.guitarra{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.guitarra .contenido{
+    padding: 1rem;
+    text-align: center;
+}
+.guitarra .contenido h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight:  900;
+    text-align: center;
+    color: var(--primary);
+}
+.guitarra .precio {
+    color: var(--primary);
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    font-weight: 900;
+}
+
+.guitarra .enlace {
+    margin-top: 2rem;
+    text-decoration: none;
+    display: block;
+    background-color: var(--black);
+    color: var(--white);
+    padding: .7rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 800;
+    transition-property: background-color;
+    transition-duration: 400ms;
+
+}
+.guitarra .enlace:hover{
+    color: black;
+    background-color: rgb(225, 225, 225);
+}
+
+
+/* cortar el contenido del lorem  a 6 y que se vea bien en la pagina */
+.guitarra .descripcion{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    font-size: 1.8rem;
+}
+
+.container {
+    box-shadow: 0px 0px 2px 0px rgba(130,130,130,1);
+    border-radius: 5px;
+    transition: transform .2s;
+}
+.container:hover{
+transform: scale(1.01);
+}
+
+.imagen{
+    width: 100%;
+   padding-right: 10rem;
+}
