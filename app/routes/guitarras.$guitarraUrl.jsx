@@ -3,9 +3,9 @@ import { getGuitarra } from "../models/guitarras.server"
 import styles from "../styles/guitarra.css"
 
 
-export function meta(){
+export function meta({data}){
     return ([
-      {title: 'GuitarLA - Guitarra'},
+      {title: `GuitarLA - ${data.data[0].attributes.nombre}`},
       {description: 'Venta de guitarras, blog de musica, Venta de cursos, informacion'}
     ])
   }
