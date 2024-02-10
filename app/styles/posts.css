@@ -63,3 +63,12 @@ padding: 1.5rem;
     font-size: 1.4rem;
     color: var(--primary);
 }
+
+.post{
+    max-width: 80rem;
+    margin:10 auto;
+}
+.post .texto{
+    white-space: pre-wrap;
+}
+

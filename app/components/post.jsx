@@ -1,5 +1,13 @@
 import { Link } from "@remix-run/react"
 import {formatearFecha} from "../utils/helpers"
+
+export function meta(){
+  return ([
+    {title: 'GuitarLA - Tienda'},
+    {description: 'Venta de guitarras, blog de musica, Venta de cursos, informacion'}
+  ])
+}
+
 function Post({post}) {
 
 const {contenido, imagen, titulo, url, publishedAt} = post
