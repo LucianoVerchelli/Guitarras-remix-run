@@ -18,6 +18,7 @@ const { contenido, imagen, titulo } = curso
             <div className="contenido">
                 <h2 className="heading">{titulo}</h2>
                 <p className="texto">{contenido}</p>
+                <p className="btn">Mas informacion</p>
             </div>
         </div>
       </section>

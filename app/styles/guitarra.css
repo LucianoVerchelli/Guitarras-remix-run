@@ -37,6 +37,7 @@
     transition-property: background-color;
     transition-duration: 400ms;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .btn:hover {
     color: black;

@@ -21,4 +21,21 @@
     color: var(--white)
 }
 
+.btn{
+    background-color: var(--primary);
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 800;
+    transition-property: background-color;
+    transition-duration: 400ms;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+}
+.btn:hover {
+    color: black;
+    background-color: rgb(225, 225, 225);
+}
+
 
