@@ -1,6 +1,6 @@
 import {getPosts} from "../models/posts.server"
 import { useLoaderData } from "@remix-run/react"
-import Post from "../components/post"
+import ListadoPosts from "../components/listadoPosts"
 import styles from "../styles/posts.css"
 
 
@@ -25,17 +25,7 @@ function Blog() {
 
   return (
     <main className="contenedor">
-      <h2 className="heading">
-
-      </h2>
-      <div className="blog">
-          {posts.map(post =>(
-            <Post
-              key={post.id}
-              post={post.attributes}
-            />
-          ))}
-      </div>
+<ListadoPosts posts={posts}/>
     </main>
   )
 }
