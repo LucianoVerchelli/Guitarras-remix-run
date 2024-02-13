@@ -1,7 +1,8 @@
-import { Link } from "@remix-run/react"
+import { Link, Outlet, useOutletContext} from "@remix-run/react"
 
 function Guitarra({guitarra}) {
 const {descripcion, imagen, precio, url, nombre} = guitarra
+
 
 
   return (
@@ -14,6 +15,8 @@ const {descripcion, imagen, precio, url, nombre} = guitarra
         <p className="precio">${precio}</p>
 
         <Link className="enlace" to={`/guitarras/${url}`}>Ver producto</Link>
+        
+            <Outlet context={useOutletContext()}/>
     </div>
    </div>
    </div>

@@ -46,3 +46,34 @@
 .imagen{
     padding-right: 70px;
 }
+
+.formulario{
+display: flex;
+flex-direction: column;
+}
+.formulario label{
+font-size: 2.2rem;
+margin-bottom: 1rem;
+}
+.formulario select{
+text-align: center;
+padding: 1rem ;
+border: 1px solid black;
+border-radius: 1rem;
+}
+.formulario input[type="submit"]{
+margin-top: 3rem;
+background-color: var(--black);
+color: var(--white);
+text-transform: uppercase;
+font-weight: 700;
+padding: 1.4rem;
+border: none;
+cursor: pointer;
+transition-property: background-color;
+transition-duration: 400ms;
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: var(--primary);
+}
