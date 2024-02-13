@@ -73,6 +73,8 @@ const agregarCarrito =  guitarra =>{
     setCarrito([...carrito, guitarra])
    }
 }
+
+// actualizar la cantidad de el carrito cuando se cambia el select 
             const actualizarCantidad = guitarra =>{
                 const carritoActualizado = carrito.map(guitarraState =>{
                     if(guitarraState.id === guitarra.id){

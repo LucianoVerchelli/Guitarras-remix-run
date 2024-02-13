@@ -71,6 +71,12 @@ function Carrito() {
         <aside className="resumen">
           <h3>Resumen del Pedido</h3>
           <p>Total a pagar: ${total}</p>
+
+          {/* hacer funcional los botones para comprar y limpiar el resumen */}
+          <div className="container-btn">
+          <button className="finalizar">comprar</button>
+          <button className="borrar-resumen">borrar</button>
+          </div>
         </aside>
       </div>
     </main>

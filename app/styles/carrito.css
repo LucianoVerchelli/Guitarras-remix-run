@@ -74,3 +74,36 @@ width: 100%;
     padding: 1.5rem;
     border-radius: 1rem;
 }
+.finalizar{
+    padding: 1rem;
+    background-color: rgb(22, 197, 22);
+    color: white;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+.finalizar:hover{
+    cursor: pointer;
+}
+
+.container-btn{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.borrar-resumen{
+    padding: 1rem;
+    background-color: rgb(253, 54, 54);
+    color: white;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+.borrar-resumen:hover{
+
+    cursor: pointer;
+}
